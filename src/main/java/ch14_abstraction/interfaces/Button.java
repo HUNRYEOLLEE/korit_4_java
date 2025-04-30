@@ -1,8 +1,8 @@
 package ch14_abstraction.interfaces;
 /*
     인터페이스는 다중 상속이 가능하다는 점을 보여주는 클래스이다.
-    단일 상속을 위한 명령어 -> extends
-    다중 상속을 위한 명령어 -> implements
+    클래스 상속을 위한 명령어 -> extends
+    인터페이스 상속을 위한 명령어 -> implements
  */
 public abstract class Button implements Up, Down, Press {
 

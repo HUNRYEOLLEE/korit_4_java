@@ -25,5 +25,32 @@ public class Main {
 
         control1.powerOn();
         control1.powerOff();
+
+        // SmartPhone, Speaker, Tv 객체를 각각 만들어서 순서대로 control1 객체의 필드인
+        // deviceArray에 집어넣으시오.
+
+        // deviceArray에 연결된 제품들의 전원을 켜도록 코드를 작성하시오.
+        // tv1의 전원을 켜도록 코드를 작성하시오.
+
+        // deviceArray에 연결된 제품들의 전원을 끄도록 코드를 작성하시오.
+        // tv1의 전원을 끄도록 코드를 작성하시오.
+
+        SmartPhone smartPhone1 = new SmartPhone();
+        Speaker speaker1 = new Speaker();
+        Tv tv1 = new Tv();
+
+        control1.addDevice(smartPhone1);
+        control1.addDevice(speaker1);
+        control1.addDevice(tv1);
+
+        control1.powerOn();
+        tv1.on();
+        control1.powerOff();
+        tv1.off();
+
+        control1.performSpecificMethod();
+        // tv1의 경우 control의 필드에 들어가있지 않기 때문에
+        tv1.channelUp();
+
     }
 }
